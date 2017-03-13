@@ -81,8 +81,6 @@ def contact(request):
             #     'arpad.web@gmail.com',
             #     ['asztell@yahoo.com'],
             #     fail_silently=False,
-            #     auth_user = 'admin',
-            #     auth_password = 'pass1234',
             # )
 
             return redirect('contact')
