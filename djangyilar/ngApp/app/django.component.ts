@@ -3,6 +3,6 @@ import {Component} from "@angular/core";
   templateUrl: '/sample/ng/'
 })
 export class DjangoComponent{
-  ngVariable = "This is angular2 component property with interpolation";
+  ngVariable = "This is an angular2 component property with interpolation";
 
 }

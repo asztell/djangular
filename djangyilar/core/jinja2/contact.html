@@ -1,0 +1,17 @@
+{% block title %}Contact
+<!--{{ block.super }}-->
+{% endblock %}
+
+{% block content %}
+<h1>Contact</h1>
+<form enctype="multipart/form-data" role="form" action="/contact/" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="[{ csrf_token }]">
+    <label for="contact_name">Name:</label><br>
+    <input id="contact_name" type="text" name="contact_name"/><br>
+    <label for="contact_email">Email:</label><br>
+    <input id="contact_email" type="email" name="contact_email"/><br>
+    <label for="content">Message:</label><br>
+    <textarea id="content" name="content"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

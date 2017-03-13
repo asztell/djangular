@@ -1,6 +1,8 @@
+<h4>Jinja2 Template (from '/core/jinja2/template.html') with variables from django and angular.</h4>
+<h5>[{ django_variable }] - defined in '/core/views.py'</h5>
+<h5>{{ ngVariable }} - defined in '/ngApp/app/django.component.ts'</h5>
 
-Jinja2 Template with variales from django and angular.
-<br>
-[{ django_variable }]
-<br>
-{{ ngVariable }}
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>

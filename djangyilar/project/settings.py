@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_mailbox',
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -109,13 +110,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_COOKIE_SECURE = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -131,3 +133,13 @@ STATIC_URL = '/static/'
 
 ANGULAR_URL = '/ng/'
 ANGULAR_ROOT = os.path.join(BASE_DIR, 'ngApp/')
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'arpad.web@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'arpad.web@gmail.com'
+# EMAIL_HOST_USER = 'smtp.gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
