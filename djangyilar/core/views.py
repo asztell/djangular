@@ -70,7 +70,7 @@ def contact(request):
             #     "New contact form submission",
             #     content,
             #     "Your website" +'',
-            #     ['arpad.web@gmail.com'],
+            #     ['user@gmail.com'],
             #     headers = {'Reply-To': contact_email }
             # )
             # email.send()
@@ -78,8 +78,8 @@ def contact(request):
             # send_mail(
             #     'Subject here',
             #     form_content,
-            #     'arpad.web@gmail.com',
-            #     ['asztell@yahoo.com'],
+            #     'user@gmail.com',
+            #     ['user@yahoo.com'],
             #     fail_silently=False,
             # )
 
