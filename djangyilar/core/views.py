@@ -31,7 +31,13 @@ class NgTemplateView(View):
 	"""View to render django template to angular"""
 	def get(self, request):
 		return render(request, 'template.html', {"django_variable": "This is a django context variable"})
-		
+
+
+class ComingSoonView(View):
+	"""View to render django template to angular"""
+	def get(self, request):
+		return render(request, 'comingsoon.html', {})		
+
 
 def contact(request):
     form_class = ContactForm
@@ -70,7 +76,7 @@ def contact(request):
             #     "New contact form submission",
             #     content,
             #     "Your website" +'',
-            #     ['user@gmail.com'],
+            #     ['use@gmail.com'],
             #     headers = {'Reply-To': contact_email }
             # )
             # email.send()

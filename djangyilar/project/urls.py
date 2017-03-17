@@ -17,12 +17,13 @@ from django.conf import settings
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
-from core.views import SampleView, AngularApp, NgTemplateView, contact
+from core.views import SampleView, AngularApp, NgTemplateView, ComingSoonView, contact
 # from .views import 
 
 ngurls = [
     url(r'^$', SampleView.as_view(), name='sample'),
     url(r'^ng/$', NgTemplateView.as_view(), name='ngTemplate'),
+    url(r'^comingsoon/$', ComingSoonView.as_view()),
 ]
 
 urlpatterns = [

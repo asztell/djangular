@@ -9,6 +9,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
         <nav>
           <a href="/contact/">Contact Us</a>
           <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+          <a routerLink="/comingsoon" routerLinkActive="active">Coming Soon Page</a>
           <a routerLink="/aboutme" routerLinkActive="active">About Mee</a>
         </nav>
         <router-outlet></router-outlet>
