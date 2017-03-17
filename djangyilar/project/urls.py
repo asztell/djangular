@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from core.views import SampleView, AngularApp, NgTemplateView, ComingSoonView, contact
 # from .views import 
 
+
 ngurls = [
     url(r'^$', SampleView.as_view(), name='sample'),
     url(r'^ng/$', NgTemplateView.as_view(), name='ngTemplate'),
